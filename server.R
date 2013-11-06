@@ -59,7 +59,7 @@ shinyServer(function(input, output) {
   output$mytext <- renderText({
     if(is.null(runSimulation())) return(NULL)
     
-    HTML(paste("<h4>Based on", input$simulationN,"simulations, the probability that candidate A wins is:<strong>", mean(runSimulation()[,3]),"</strong></h4>"))
+    HTML(paste("<h4>Based on", input$simulationN,"simulations, the probability that candidate A wins is:<strong>", round(mean(runSimulation()[,3]), 3),"</strong></h4>"))
     
   })
   
