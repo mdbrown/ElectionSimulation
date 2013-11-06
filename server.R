@@ -45,7 +45,7 @@ shinyServer(function(input, output) {
          ylab("Proportion of votes for candidate A")+ 
          scale_color_discrete(name = "", 
                               breaks = c(0, 1), 
-                              labels = c("A wins", "B wins")) #+ 
+                              labels = c("B wins", "A wins")) #+ 
                             #  geom_rect(xmin = -Inf, xmax = input$Avotes + input$Bvotes, 
                              #           ymin = -Inf, ymax = Inf, fill = "grey50", alpha = I(.2), color = "grey50") + 
                             #  annotate("text", x = (input$Avotes + input$Bvotes)/2, y = input$Avotes/(input$Avotes + input$Bvotes), label = "votes already counted")
